@@ -1,2 +1,0 @@
-\babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Tensor Algebra}{1}{chapter.1}
