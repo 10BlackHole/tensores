@@ -101,3 +101,24 @@ An important case is a tensor of zero rank, called a \textbf{scalar} or \textbf{
 \begin{equation}\label{5.18}
   \boxed{\phi' =\phi}
 \end{equation}
+at $P$.
+
+\section{Covariant and mixed tensors}
+Let
+\begin{equation}\label{5.19}
+  \phi=\phi(x^{a})
+\end{equation}
+be a real-valued function on the manifold (at every point $P$ in the manifold, $\phi(P)$ produces a real number). Also assume that $\phi$ is continuous and differentiable.
+
+Remembering from (\ref{5.9}), $x^{a}$ can be thought of as a function of $x'^b$, (\ref{5.19}) can be written equivalently as $$\phi=\phi(x^{a}(x'))$$ Remembering Differentiating this with respect to $x'^b$, we obtain 
+\begin{equation*}
+  \pdv{\phi}{x'^b}=\pdv{\phi}{x^{a}}\pdv{x^{a}}{x'^b }
+\end{equation*}
+Then changing the order of the terms, the dummy index, and the free index (from $b$ to $a$) gives
+\begin{equation}\label{5.20}
+  \pdv{\phi}{x'^{a}}=\pdv{x^b}{x'^{a}}\pdv{\phi}{x^b }
+\end{equation}
+This is the prototype equation we are looking for. Notice that it involves the inverse transformation matrix $\pdv*{x^b}{x'^{a}}$. Thus, a \textbf{convariant vector} or \textbf{covariant tensor of rank (order) 1} is a set of quantities, which transform according to 
+\begin{equation}\label{5.21}
+  \boxed{X'_a=\pdv{x^b}{x'^{a}}X_b}
+\end{equation}
