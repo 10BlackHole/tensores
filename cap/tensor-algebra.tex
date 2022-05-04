@@ -122,3 +122,28 @@ This is the prototype equation we are looking for. Notice that it involves the i
 \begin{equation}\label{5.21}
   \boxed{X'_a=\pdv{x^b}{x'^{a}}X_b}
 \end{equation}
+Again, the transform matrix occuring is assumed to be evaluated at $P$.
+
+Similary, we define a covariant tensor of rank 2 by the transform law
+\begin{equation}\label{5.22}
+  X'_{ab} = \pdv{x^c}{x'^a}\pdv{x^d}{x'^b}
+\end{equation}
+and so on for higher-rank tensors.
+
+Note the convention that contravariant tensors have raised indices whereas covariant tensors have lowed indices. The way to remember this is the \textbf{co} goes \textbf{below}. The fact that the differentials $\dd x^{a}$ transform as a contravariant vector explains the convention that the coordinate  themeselves are written as $x^{a}$ rather than $x_a$, although note that it is only the differentials and not the coordinates which have tensorial character. 
+
+We can go on on to define \textbf{mixed} tensors in the obvious way. For example, a mixed tensor of rank 3- one contravariant rank and two covariant rank- satisfies
+\begin{equation}\label{5.23}
+  X'^{a}_{bc}=\pdv{x'^{a}}{x^d}\pdv{x^{e}}{x'^{b}}\pdv{x^f}{x'^{c}}X^{d}_{ef}
+\end{equation}
+If  a mixed tensor has contravariant rank $p$ and covariant rank $1$, then it is said to have \textbf{type} or \textbf{valence} $(p,q)$. 
+
+Suppose we find in one coordinate system that two tensors, $X_{ab}$ and $Y_{ab}$ say, are equal 
+\begin{equation}\label{5.24}
+  X_{ab}=Y_{ab}
+\end{equation}
+Les us multiply both sides by the matrices $\pdv*{x^{a}}{x'^c}$ and $\pdv*{x^b}{x'^c}$ and take the implies summations to get
+\begin{equation*}
+  \pdv{x^{a}}{x'^c}\pdv{x^b}{x'^d}X_{ab}=\pdv{x^{a}}{x'^c}\pdv{x^b}{x'^d}Y_{ab}
+\end{equation*}
+Since $X_{ab}$ and $Y_{ab}$ are both covariant tensors of rank 2 it follows that $X'_{ab}=Y'_{ab}$.
