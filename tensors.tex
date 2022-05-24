@@ -1,35 +1,79 @@
 \documentclass[letterpaper, onecolumn, 11pt]{report}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+%\usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{wrapfig}
+%\usepackage{txfonts} %bkn
 \usepackage{physics}
+\usepackage{wrapfig}
 \usepackage{hyperref}
 \usepackage{marginnote}
 \usepackage{caption}
 \usepackage{amsfonts}
-\usepackage{draculatheme}
-\spanishdecimal{.}
-
-%\renewcommand*{\marginnotevadjust}{-0.1cm}
-%\renewcommand*{\marginfont}{\footnotesize}
-%\usepackage[right=4.5cm,left=2cm,top=3cm,bottom=3.0cm]{geometry}
-%\usepackage[right=3.0cm,left=1.20cm,top=1.5cm,bottom=1.5cm]{geometry}
-
-\hypersetup{colorlinks=true, linkcolor=red}
+%\usepackage{draculatheme} %Agregar draculatheme.sty  al directorio del proyecto LaTeX
+%\spanishdecimal{.}
 \usepackage{hyperref}
 \usepackage{marginnote}
+\hypersetup{colorlinks=true, linkcolor=red}
+
+\newtheorem{teo}{Theorem}
+\newtheorem{axiom}{Axiom}
+\newtheorem{example}{Example}
+\newtheorem{sol}{Solution}
+
+
 
 \renewcommand*{\marginnotevadjust}{-0.1cm}
 \renewcommand*{\marginfont}{\footnotesize}
 \usepackage[right=4.5cm,left=2cm,top=3cm,bottom=3.0cm]{geometry}
-%\hypersetup{colorlinks=true, linkcolor=blue}
 \begin{document}
 \sffamily
-\title{\Huge\textbf{{Tensores}}}
-\author{Diez B. Borja}
-\maketitle
+\begin{center}
+
+\
+
+\vspace{6.5cm}
+
+\rule{15cm}{0.1cm}
+
+\vspace{1.5cm}
+
+{\huge \textsc{\textbf{Tensors}}}
+
+\vspace{1.5cm}
+
+\rule{15cm}{0.1cm}
+
+\vspace{1.5cm}
+Diez B. Borja
+
+
+\today
+
+\newpage
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\pagestyle{plain}
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+\emph{This notes has been written by \href{https://github.com/10BlackHole}{B. Diez} mainly from Introducing Einstein's Relativity by Ray D'Inverno and own knowledge.}
+
+\end{center}
+%\title{\Huge\textbf{{Quantum Mechanics}}}
+%\author{Diez B. Borja}
+%\maketitle
+\tableofcontents
+\pagenumbering{arabic}
+\setcounter{page}{1}
 \input{cap/tensor-algebra.tex}
-%\tableofcontents
+
 \end{document}

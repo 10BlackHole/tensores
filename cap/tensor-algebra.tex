@@ -146,4 +146,14 @@ Les us multiply both sides by the matrices $\pdv*{x^{a}}{x'^c}$ and $\pdv*{x^b}{
 \begin{equation*}
   \pdv{x^{a}}{x'^c}\pdv{x^b}{x'^d}X_{ab}=\pdv{x^{a}}{x'^c}\pdv{x^b}{x'^d}Y_{ab}
 \end{equation*}
-Since $X_{ab}$ and $Y_{ab}$ are both covariant tensors of rank 2 it follows that $X'_{ab}=Y'_{ab}$.
+Since $X_{ab}$ and $Y_{ab}$ are both covariant tensors of rank 2 it follows that $X'_{ab}=Y'_{ab}$. In other words, (\ref{5.24}) holds in \textbf{any} other coordinate system. In short, a tensor equations whics holds in one coordinate system necessarily holds in \textbf{all} coordinate systems. Thus, although we introduce coordinate systems for convenience un tackling particular problems, if we work with tensorial equations then they hold in all coordinate systems. Put another way, tensorial equations are coordinate-independet. This is something that the index-free or coordinate-free approach makes clear from the outset.
+
+\section{Tensor Fields}
+In a vector analysis, a fixed is a vector associated with a point, whereas a vector \textbf{field} defined over a region is an association of a vector to every point in that region. In exactly the same way, a tensor is a set of quantities defined at one point in the manifold. A \textbf{tensor field} defined over some region of the manifold is an assocaition of a tensor of the same valence to every point of the region, i.e: $$P\to T_{b...}^{a...}(P)$$ where $T_{b...}^{a...}(P)$ is the value of the tensor at $P$. The tensor fields is called continous or differentiable if its components in all cordinate systems are continuous  or differentiable functions of the cooridinates. The tensor field is called smooth if its components are differentiable to all orders, which is denoted mathematically by saying that all the components are $C^\infty$. Thus, for example, a contravariant vector fields defined over a region is a set of $n$ \textbf{functions} defined over that region, and the vector field is \textbf{smooth} if the functions are all $C^\infty$. The transformation law for contravariant vector field then becomes
+\begin{equation}\label{5.25}
+  X'^{a}(x')=\left[\pdv{x'^{a}}{x^b}\right]_PX^b(x)
+\end{equation}
+at each point $P$ in the region, since the old components $X^{a}$ are functions of the old $x^{a}$-coordinates and the new components $X'^{a}$ are funxtions of the new $x'^{a}$-coordinates.
+
+As in the case of vectors and vector fields in vector analysis, the distinction between a tensor and a tensor field is not always made completely clear. We shall for the most part be dealing with tensor field from now on, but to confo, whith general usage we shall often refer to tensor fields simply as tensors. We will again shorten the transformation law such as (\ref{5.25}) to the form (\ref{5.21}) with everything else being implied. If we wish to emphasize that a tensor is a field. we shall write it in functional form, namely, as $T_{b...}^{a...}(x)$.
+
