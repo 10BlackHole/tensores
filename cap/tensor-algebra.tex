@@ -125,7 +125,7 @@ Again, the transform matrix occuring is assumed to be evaluated at $P$.
 
 Similary, we define a covariant tensor of rank 2 by the transform law
 \begin{equation}\label{5.22}
-  X'_{ab} = \pdv{x^c}{x'^a}\pdv{x^d}{x'^b}
+  X'_{ab} = \pdv{x^c}{x'^a}\pdv{x^d}{x'^b}X_{cd}
 \end{equation}
 and so on for higher-rank tensors.
 
@@ -163,7 +163,7 @@ Tensor calculus is concernerd with \textbf{tensorial operations}, that is, opera
 \end{equation}
 The same holds true for subtraction and scalar multiplication.
 
-A covariant tensor of rank $2$ is said to be \textbf{symmetric} if $X_{ab}=X_{ba}$, in which case it has only $\frac{1}{2}n(n+1)$ independent components (check this by establishing how many independent components there are of a symmetric matrix of order $n$). Symmetry is a tensorial property. A similar definition holds for a contravariant tensor $X^{ab}$. The tensor $X_{ab}$ is said to be \textbf{ant-symmetric} or \textbf{skew symmetric} if $X_{ab}=-A_{ba}$, which has only $\frac{1}{2}n(n-1)$ independent components; this is again a tensorial property. A notation frequantly used to denote the symmetric part of a tensor is
+A covariant tensor of rank $2$ is said to be \textbf{symmetric} if $X_{ab}=X_{ba}$, in which case it has only $\frac{1}{2}n(n+1)$ independent components (check this by establishing how many independent components there are of a symmetric matrix of order $n$). Symmetry is a tensorial property. A similar definition holds for a contravariant tensor $X^{ab}$. The tensor $X_{ab}$ is said to be \textbf{ant-symmetric} or \textbf{skew symmetric} if $X_{ab}=-X_{ba}$, which has only $\frac{1}{2}n(n-1)$ independent components; this is again a tensorial property. A notation frequantly used to denote the symmetric part of a tensor is
 \begin{equation}\label{5.27}\marginnote{Symmetric part of a tensor}
   X_{(ab)}=\frac{1}{2}(X_{ab}+X_{ba})
 \end{equation}
