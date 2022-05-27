@@ -1,3 +1,17 @@
 \chapter{Tensor Calculus}\label{cap:6}
 \section{Partial Derivative of a Tensor}\label{sec:6.1}
 In the last chapter, we met algebraic operations which are tensorial, that is, which convert tensors into tensors. The operations are addition, subtraction, multiplication, and contraction. The next question which arises is, What differential operations are there that are tensorial? The answer to this turns out to be very much more envolced. The first thing we shall see is the partial differentations of tensors is \textbf{not} tensorial. Different authors denote the partial derivative of a contravariant vector $X^{a}$ by $$\partial_bX^{a}\quad \mbox{or} \quad \pdv{X^{a}}{x^b}\quad\mbox{or}\quad \tensor{X}{^{a}_{,b}} \quad \mbox{or}\quad \tensor{X}{^{a}_{|b}}$$
+and similarly for higher-rank tensors. We shall use a mixture of all the first three notations. (Note that in the literature, the partial derivative of a tensor is often referred to ad the \textbf{ordinary} derivativa of a tensor, to distinguish ir from the tensorial differentiation we shall shortly meet). Now differentiating (\ref{5.16}) with respect to $x'^c$, we find
+\begin{align}
+	\nonumber\partial '_xX'^{a}&=\frac{\partial}{\partial x'^c}\left(\pdv{x'^{a}}{x^b}X^b\right)\\
+					\nonumber					&=\pdv{x^d}{x'^c}\frac{\partial}{\partial x^d}\left(\pdv{x'^{a}}{x^b}X^b\right)\\
+														&=\pdv{x'^{a}}{x^b}\pdv{x^d}{x'^c}\partial _dX^b+\frac{\partial^2x'^{a}}{\partial x^b\partial x^d}\pdv{x^d}{x'^c}X^b\label{6.1}
+\end{align}
+If the first term on the right-hand side alone were present, then this would be the usual tensor transformation law of a tensor of type $(1,1)$. However, the presence of the second term prevents $\partial_bX^{a}$ from behaving like a tensor.
+
+There is a fundamental reason why this is the case. By definition, the process of differentiation involves comparing a quantity evaluated at two neighboring points, $P$ and $Q$ say, dividing by some parameter representing the separation of $P$ and $Q$ and then taking the limit as this parameter goes to zero. In the case of a cintravariant vector field $X^{a}$, this would involve computing $$\lim_{\delta u\to 0}\frac{[X^{a}]_P-[X^{a}]_Q}{\delta u}$$ for some appropiate parameter $\delta u$. However, from the transformation law in the form (\ref{5.25}), we see that $$X'^{a}_P=\left[\pdv{x'^{a}}{x^b}\right]_PX^b_P\quad\mbox{and}\quad X'^{a}_Q=\left[\pdv{x'^{a}}{x^b}\right]_QX^b_Q$$ This involves the transformation matrix evaluated at \textbf{differnet} points, from which it should be clear that $X^{a}_P - X^{a}_P$ is not a tensor. Similar remarks hold for differentiating tensors in general.
+
+It turns out that if  we wish to differentiate a tensor in a tensorial manner then we need to introduce some auxiliary field into the manifold. We shall meet three different types of diffenrentiation. First of all, in the next section, we shall introduce a \textbf{contravariant vector field} onto the manifold and ise it to define the \textbf{Lie derivative}. Then we shall introduce a quantity called an \textbf{afine connection} and use it to define \textbf{covariant differentiation}. Finally, we shall introduce a tensor called a \textbf{metric} and from it build a special affine conection, called the \textbf{metric connection}, and again define \textbf{covariant differentiation} but relative to this specific connection.
+
+\section{The Lie Derivative}\label{sec:6.2}
+
