@@ -18,3 +18,33 @@ The argument we present in this section is rather intricate. It rest on the idea
 
 We start by considering a \textbf{cogurence of curves}  defined such that inly one curve goes through each point in the manifold. Then, given any one curce of the congruence, $$x^{a}=x^{a}(u),$$ we can ise it to define the tangent vector field $\dd x^{a}/\dd u$ along the curve. If we do this for every curve in the congruence, then we end up with a vector field $X^{a}$ (given $\dv*{x^{a}}{u}$ at each point) defined over the whole manifold. 
 
+Conversely, given a non-zero vector field $X^{a}(x)$ defined over the manifold, then this can be used to define a congruence of curves in the manifold called the \textbf{orbits} or \textbf{trajectories} of $X^{a}$. The procedure is exactly the same as the way in which a vector field gives rise to field lines or streamlines in vector analysis. These curves are obtained by solving the ordinary diffrerentual equations
+\begin{equation}\label{6.2}
+	\pdv{x^{a}}{u}=X^{a}(x(u))
+\end{equation}
+The existence and uniqueness theorem for ordinary differnetial equations guarantees a solution, at least for some subset of the reals. In what follows, we are really only interested in what happens locally.
+
+We therefore assume that $X^{a}$ has been given and we have constructed the local congruence of curves. Suppose we have some tensor fields $T^{a\cdots}_{b\cdots}(x)$ which we wish to differentiate using $X^{a}$. Thene the essential idea is to use the congruence of curves to \textbf{drag} the tensor at some point $P$ (i.e. $T^{a\cdots}_{b\cdots}(x)$) along the curve passing through $P$ to some neighbouring point $Q$, and then compare this "dragged-along tensor" with the tensor already there (i.e. $T^{a\cdots}_{b\cdots}(Q)$) (Fig \ref{fig:6.3}). Since the dragged-along tensor will be of the same type as the tensor already at $Q$, we can \textbf{subtract the two tensors at $Q$} and so define a derivative by some limiting process as $Q$ tends to $P$. The technique for dragging involves viewing the coordinate transformation from $P$ to $Q$ \textbf{actively}, and applying it to the usual tranformation law of tensors. We shall consider the detailed calculation in the case of a contravariant tensor field of rank $2$, $T{ab}(x)$ say.
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.5]{fig/fig:6-3.png}
+		\caption{Using the congruence to compare tensors at neighbouring points.}
+		\label{fig:6.3}
+	\end{center}	
+\end{figure}
+
+Consider the transformation
+\begin{equation}\label{6.3}\marginnote{Point transformation}
+	\boxed{x'^{a}=x^{a}+\delta u X^{a}(x)}
+\end{equation}
+where $\delta u$ is small. This is called a \textbf{point transformation} and is to be regarded actively as sending the point $P$, with cooridantes $x^{a}$, to the point $Q$, with coordinates $x^{a}+\delta uX^{a}(x)$, where the coordinates of each point are given in the \textbf{same} $x^{a}$-coordinae system, i.e.
+\begin{align*}
+	P&\to Q\\
+	x^{a}&\to x^{a}+\delta uX^{a}(x)
+\end{align*}
+
+
+
+
+
